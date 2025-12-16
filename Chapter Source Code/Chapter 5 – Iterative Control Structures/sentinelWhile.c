@@ -5,12 +5,12 @@ int main(int argc, char *argv[]) {
     int value;
     double avg;
 
-    printf("Enter integers (­-1 to end): ");
+    printf("Enter integers (-1 to end): ");
     scanf("%d", &value);    //initialization
     while (value != -1) { //condition
         sum = sum + value;
         count++;
-        printf("Enter integers (­-1 to end): ");
+        printf("Enter integers (-1 to end): ");
         scanf("%d", &value);  //update
     }
 
