@@ -14,7 +14,7 @@ int main(int argc, char *argv[]) {
     another = strdup(", plus a few more.");
 
     // calculate total space and allocate enough storage for concatenation.
-    int total = strlen(astring) + strlen(another) + 1;
+    size_t total = strlen(astring) + strlen(another) + 1;
     concat = malloc(total * sizeof(char));
 
     // perform concatenation.
