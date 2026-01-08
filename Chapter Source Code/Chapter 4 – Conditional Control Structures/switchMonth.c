@@ -1,6 +1,6 @@
 #include <stdio.h>
 
-int main(int argc, char *argv[]) {
+int main(void) {
     int month;
     char monthStr[20], *s;
 
@@ -51,4 +51,5 @@ int main(int argc, char *argv[]) {
 
     snprintf(monthStr, sizeof monthStr, "%s", s);
     printf("The month selected is %s\n", monthStr);
+    return 0;
 }

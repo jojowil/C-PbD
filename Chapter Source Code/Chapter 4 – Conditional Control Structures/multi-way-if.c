@@ -13,4 +13,5 @@ int main(int argc, char *argv[]) {
         printf("Positive.");
     else
         printf("Zero.");
+    return 0;
 }

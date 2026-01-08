@@ -2,9 +2,8 @@
 #include <stdbool.h>
 
 int main(void) {
-    bool daytime, sunShining;
-
-    sunShining = true;
+    bool daytime;
+    bool sunShining = true;
 
     if (sunShining == true)
         daytime = true;
@@ -13,4 +12,5 @@ int main(void) {
 
     printf("sunShining = %d\n", sunShining);
     printf("daytime = %d\n", daytime);
+    return 0;
 }

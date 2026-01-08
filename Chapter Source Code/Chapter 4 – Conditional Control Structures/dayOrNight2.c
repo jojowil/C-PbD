@@ -1,11 +1,10 @@
 #include <stdio.h>
 #include <stdbool.h>
 
-int main(int argc, char *argv[]) {
+int main(void) {
+    bool daytime, nighttime;
 
-    bool daytime, nighttime, sunShining;
-
-    sunShining = true;
+    bool sunShining = true;
 
     if (sunShining == true) {
         daytime = true;
@@ -18,4 +17,5 @@ int main(int argc, char *argv[]) {
     printf("sunShining = %d\n", sunShining);
     printf("daytime = %d\n", daytime);
     printf("nighttime = %d\n", nighttime);
+    return 0;
 }

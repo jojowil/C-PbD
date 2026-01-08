@@ -1,7 +1,6 @@
 #include <stdio.h>
 
 int main(int argc, char *argv[]) {
-
     int month;
     char monthStr[20], *s;
 
