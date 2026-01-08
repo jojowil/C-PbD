@@ -20,7 +20,7 @@ int reverse(char *s) {
     return 1;
 }
 
-int main(int argc, char *argv[]) {
+int main(void) {
     char line[] = "Time to save the day!";
 
     printf("%s\n", line);
@@ -28,4 +28,5 @@ int main(int argc, char *argv[]) {
         printf("%s\n", line);
     else
         printf("Well, something was not good...\n");
+    return 0;
 }

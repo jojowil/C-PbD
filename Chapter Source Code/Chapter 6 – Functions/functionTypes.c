@@ -8,11 +8,12 @@ void print_error(const char *);
 int get_random(void);
 int power(int, int);
 
-int main(int argc, char *argv[]) {
+int main(void) {
     announce();
     printf("%d\n", get_random());
     printf("%d\n", power(2,10));
     print_error("something terrible");
+    return 0;
 }
 
 // no args, no return

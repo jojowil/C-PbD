@@ -10,7 +10,7 @@ int sum(const int potato, const int guava) {
 /* Main function */
 int main(int argc, char** argv) {
     /* sum invoked here. */
-    int x = sum(2, 5);
+    const int x = sum(2, 5);
 
     printf("The sum of 2 and 5 is %d.\n", x);
 }
