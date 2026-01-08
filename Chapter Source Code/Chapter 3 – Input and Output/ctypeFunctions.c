@@ -2,7 +2,6 @@
 #include <ctype.h>
 
 int main(int argc, char *argv[]) {
-
     printf("isalnum('A') = %d\n", isalnum('A'));
     printf("isalpha('A') = %d\n", isalpha('A'));
     printf("islower('A') = %d\n", islower('A'));
