@@ -2,7 +2,6 @@
 #include <stdlib.h>
 
 int main(void) {
-    long a;
     char buf[300];
     char *p;
 
@@ -10,7 +9,7 @@ int main(void) {
     fgets(buf, sizeof buf, stdin);
 
     // have some input, convert it to integer:
-    a = strtol(buf, &p, 10);
+    const long a = strtol(buf, &p, 10);
 
     printf("You entered %ld\n", a);
     return 0;

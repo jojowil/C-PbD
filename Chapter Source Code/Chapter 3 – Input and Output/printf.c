@@ -1,11 +1,9 @@
 #include <stdio.h>
 #include <string.h>
-#include <stdlib.h>
 
 int main(int argc, char *argv[]) {
-
     char s[] = "Some string!";
-    int x = 32, l;
+    const int x = 32;
     const double pi = 3.14159;
 
     printf("         111111111122222222223\n");
@@ -21,7 +19,7 @@ int main(int argc, char *argv[]) {
     printf("%10.4f\n", pi);
     printf("%.4f\n", pi);
 
-    l = strlen(s);
+    const int l = strlen(s);
     printf("\nThe length of \"%s\" is %d\n", s, l);
     printf("The last char of \"%s\" is '%c'\n", s, s[l - 1]);
 }

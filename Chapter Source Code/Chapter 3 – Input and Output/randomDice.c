@@ -3,11 +3,8 @@
 #include <time.h>
 
 int main(int argc, char *argv[]) {
-
-    int r;
-
     srand(time(NULL));
-    r = rand();
+    const int r = rand();
 
     printf("r is %d\n\n", r);
     printf("%d\n", r % 4 + 1);

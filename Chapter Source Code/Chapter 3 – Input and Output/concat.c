@@ -3,19 +3,15 @@
 #include <string.h>
 
 int main(int argc, char *argv[]) {
-
-    // pointers to characters.
-    char *concat, *another;
-
     // an initialized string (compile-time).
     char astring[] = "A string of characters";
 
     // runtime allocation of memory.
-    another = strdup(", plus a few more.");
+    char *another = strdup(", plus a few more.");
 
     // calculate total space and allocate enough storage for concatenation.
     size_t total = strlen(astring) + strlen(another) + 1;
-    concat = malloc(total * sizeof(char));
+    char *concat = malloc(total * sizeof(char));
 
     // perform concatenation.
     snprintf(concat, total, "%s%s", astring, another);
