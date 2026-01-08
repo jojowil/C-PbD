@@ -34,10 +34,10 @@ int get_random(void) {
 
 // args and return
 int power(const int base, const int pwr) {
-    int x, total=1;
+    int total=1;
     if ( pwr == 0 )
         return 1;
-    for ( x = 1; x <= pwr; x++ )
+    for (int x = 1; x <= pwr; x++)
         total *= base;
     return total;
 }

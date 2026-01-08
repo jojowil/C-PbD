@@ -8,9 +8,10 @@ int sum(const int a, const int b) {
 }
 
 /* Main function */
-int main(int argc, char** argv) {
+int main(void) {
     /* sum invoked here. */
     const int x = sum(2, 5);
 
     printf("The sum of 2 and 5 is %d.\n", x);
+    return 0;
 }
