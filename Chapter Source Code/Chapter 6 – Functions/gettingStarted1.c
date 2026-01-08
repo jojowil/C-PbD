@@ -1,7 +1,7 @@
 #include <stdio.h>
 
 /* function declaraion */
-int sum(int a, int b) {
+int sum(const int a, const int b) {
 
     int t;
 

@@ -7,10 +7,9 @@ int reverse(char *s) {
     int l = strlen(s);
     if ( l < 1 ) return 0;
 
-    int m = l / 2;
+    const int m = l / 2;
     for (int x = 0; x < m; x++) {
-        char t;
-        t = s[x];
+        char t = s[x];
         s[x] = s[l-x-1];
         s[l-x-1] = t;
     }

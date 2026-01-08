@@ -32,7 +32,7 @@ int get_random(void) {
 }
 
 // args and return
-int power(int base, int pwr) {
+int power(const int base, const int pwr) {
     int x, total=1;
     if ( pwr == 0 )
         return 1;
