@@ -36,4 +36,5 @@ int main(int argc, char *argv[]) {
 
     snprintf(monthStr, sizeof monthStr, "%s", s);
     printf("The month selected is %s\n", monthStr);
+    return 0;
 }
