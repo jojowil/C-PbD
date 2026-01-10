@@ -1,7 +1,7 @@
 #include <stdio.h>
 #include <string.h>
 
-int main(int argc, char *argv[]) {
+int main(void) {
     char name[30] = "William";
 
     printf("The size of name is %lu\n", sizeof name);

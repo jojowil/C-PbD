@@ -1,6 +1,6 @@
 #include <stdio.h>
 
-int main(int argc, char **argv) {
+int main(void) {
     int test1, test2, test3;
 
     printf("Enter test 1: ");
