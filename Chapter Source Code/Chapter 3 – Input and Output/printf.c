@@ -1,7 +1,7 @@
 #include <stdio.h>
 #include <string.h>
 
-int main(int argc, char *argv[]) {
+int main(void) {
     char s[] = "Some string!";
     const int x = 32;
     const double pi = 3.14159;

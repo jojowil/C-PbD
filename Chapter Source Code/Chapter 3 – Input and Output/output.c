@@ -1,6 +1,6 @@
 #include <stdio.h>
 
-int main(int argc, char *argv[]) {
+int main(void) {
     char name[30];
     snprintf(name, sizeof name, "%s", "John Smith");
 

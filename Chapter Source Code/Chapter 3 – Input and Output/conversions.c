@@ -1,7 +1,7 @@
 #include <stdio.h>
 #include <stdlib.h>
 
-int main(int argc, char *argv[]) {
+int main(void) {
     int i = atoi("37");
     printf("%d\n", i);
 
