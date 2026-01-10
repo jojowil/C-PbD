@@ -2,7 +2,7 @@
 #include <stdlib.h>
 #include <string.h>
 
-int main(int argc, char *argv[]) {
+int main(void) {
     // an initialized string (compile-time).
     char astring[] = "A string of characters";
 
