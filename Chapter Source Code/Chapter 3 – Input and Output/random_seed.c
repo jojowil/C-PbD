@@ -12,4 +12,5 @@ int main(int argc, char *argv[]) {
     printf("d10 = %d\n", r % 10 + 1);
     printf("d12 = %d\n", r % 12 + 1);
     printf("d20 = %d\n", r % 20 + 1);
+    return 0;
 }

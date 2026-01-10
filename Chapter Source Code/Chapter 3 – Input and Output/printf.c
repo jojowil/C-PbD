@@ -22,4 +22,5 @@ int main(int argc, char *argv[]) {
     const int l = strlen(s);
     printf("\nThe length of \"%s\" is %d\n", s, l);
     printf("The last char of \"%s\" is '%c'\n", s, s[l - 1]);
+    return 0;
 }
