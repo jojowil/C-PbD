@@ -1,15 +1,12 @@
 #include <stdio.h>
-#include <stdlib.h>
 #include <string.h>
 
-int main(int argc, char *argv[]) {
-
+int main(void) {
     char *fname = "quotes.txt";
     char buf[80];
     int count = 0;
-    FILE *in;
 
-    in = fopen(fname, "r");
+    FILE *in = fopen(fname, "r");
     if (in == NULL) {
         fprintf(stderr, "Unable to open file %s\n", fname);
         return 1;

@@ -1,11 +1,10 @@
 #include <stdio.h>
 
-int main(int argc, char *argv[]) {
+int main(void) {
     int sum = 0;
-    int x, value;
-    double avg;
+    int value;
 
-    x = 1;   //initialization
+    int x = 1;   //initialization
     while (x <= 3) {  //condition
         printf("Enter value #%d: ", x);
         scanf("%d", &value);
@@ -13,8 +12,9 @@ int main(int argc, char *argv[]) {
         x++;   //update
     }
 
-    avg = sum / 3.0;
+    double avg = sum / 3.0;
 
     printf("The sum is %d.\n", sum);
     printf("The average is %f.\n", avg);
+    return 0;
 }

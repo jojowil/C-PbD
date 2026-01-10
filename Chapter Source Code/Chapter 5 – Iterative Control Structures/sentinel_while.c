@@ -1,9 +1,8 @@
 #include <stdio.h>
 
-int main(int argc, char *argv[]) {
+int main(void) {
     int sum = 0, count = 0;
     int value;
-    double avg;
 
     printf("Enter integers (-1 to end): ");
     scanf("%d", &value);    //initialization
@@ -14,8 +13,9 @@ int main(int argc, char *argv[]) {
         scanf("%d", &value);  //update
     }
 
-    avg = sum / (double) count;
+    double avg = sum / (double) count;
 
     printf("The sum is %d.\n", sum);
     printf("The average is %f.\n", avg);
+    return 0;
 }

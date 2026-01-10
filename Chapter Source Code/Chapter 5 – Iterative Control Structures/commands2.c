@@ -2,13 +2,12 @@
 #include <string.h>
 #include <stdlib.h>
 
-int main(int argc, char *argv[]) {
-
+int main(void) {
     char line[255], *cmd = NULL, *p, *c;
-    char *brkset = " \t\v\n\r";
 
     printf("cmd> ");
     while (fgets(line, sizeof line, stdin) != NULL) {
+        char *brkset = " \t\v\n\r";
 
         // too long?
         if (!(strchr(line, '\n'))) {

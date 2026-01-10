@@ -1,14 +1,11 @@
 #include <stdio.h>
 #include <stdbool.h>
 
-int main(int argc, char *argv[]) {
-    int number, range;
-    bool prime;
+int main(void) {
+    for (int number = 3; number <= 97; number = number + 2) {
+        bool prime = true;
 
-    for (number = 3; number <= 97; number = number + 2) {
-        prime = true;
-
-        for (range = 3; prime && range < number; range = range + 2) {
+        for (int range = 3; prime && range < number; range = range + 2) {
             if (number % range == 0)
                 prime = false;
         }
@@ -16,4 +13,5 @@ int main(int argc, char *argv[]) {
         if (prime)
             printf("%d\n", number);
     }
+    return 0;
 }

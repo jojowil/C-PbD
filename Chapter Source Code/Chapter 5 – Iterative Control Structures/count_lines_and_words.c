@@ -3,22 +3,20 @@
 #include <string.h>
 #include <ctype.h>
 
-int main(int argc, char *argv[]) {
-
+int main(void) {
     char *fname = "quotes.txt";
     char buf[80], *line, *p;
-    int len, inuse = 0, l, state;
-    int count = 0, words = 0, totalWords = 0;
-    FILE *in;
+    int inuse = 0;
+    int count = 0, words = 0, total_words = 0;
 
     // Attempt to open file. Report error on NULL.
-    in = fopen(fname, "r");
+    FILE *in = fopen(fname, "r");
     if (in == NULL) {
         fprintf(stderr, "Unable to open file %s\n", fname);
         return 1;
     }
 
-    len = sizeof buf;
+    int len = sizeof buf;
     if (!(line = malloc(len * sizeof(char)))) {
         fprintf(stderr, "Cannot allocate initial buffer of %d chars.\n", len);
         return 1;
@@ -28,7 +26,7 @@ int main(int argc, char *argv[]) {
         printf("%s", buf);
 
         // check we have enough room.
-        l = strlen(buf);
+        int l = strlen(buf);
         if (len - inuse < l) {
             len += sizeof buf;
             if (!(p = realloc(line, len * sizeof(char)))) {
@@ -48,7 +46,7 @@ int main(int argc, char *argv[]) {
             count++;
 
             // state: 1 means we are in a word.
-            state = 0;
+            int state = 0;
             p = line;
             while (*p) {
                 if (isspace(*p))
@@ -60,7 +58,7 @@ int main(int argc, char *argv[]) {
                 p++;
             }
             printf("Words in this line is %d\n", words);
-            totalWords += words;
+            total_words += words;
 
             // reset to empty line
             line[0] = '\0';
@@ -73,7 +71,7 @@ int main(int argc, char *argv[]) {
     fclose(in);
     free(line);
     printf("Total number of lines is %d\n", count);
-    printf("Total number of words is %d\n", totalWords);
+    printf("Total number of words is %d\n", total_words);
 
     return 0;
 }

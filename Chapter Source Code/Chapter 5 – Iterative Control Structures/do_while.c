@@ -2,11 +2,10 @@
 #include <stdbool.h>
 #include <ctype.h>
 
-int main(int argc, char *argv[]) {
+int main(void) {
     char choice;
-    bool valid;
 
-    valid = false;
+    bool valid = false;
     do {
         printf("\nPlease select a menu option.\n\n");
 
@@ -34,4 +33,5 @@ int main(int argc, char *argv[]) {
                 break;
         }
     } while (!valid);
+    return 0;
 }

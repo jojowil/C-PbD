@@ -5,15 +5,14 @@
 #define ARGMAX 10
 #define LINEMAX 255
 
-int main(int argc, char *argv[]) {
-
+int main(void) {
     char line[LINEMAX], *p, *c;
-    char *brkset = " \t\v\n\r";
     int len = 0;
     char *parts[ARGMAX];
 
     printf("cmd> ");
     while (fgets(line, sizeof line, stdin) != NULL) {
+        char *brkset = " \t\v\n\r";
 
         // too long?
         if (!(strchr(line, '\n'))) {

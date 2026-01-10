@@ -1,6 +1,6 @@
 #include <stdio.h>
 
-int main(int argc, char *argv[]) {
+int main(void) {
     int sum = 0, count = 0;
     int value;
     double avg;
@@ -16,4 +16,5 @@ int main(int argc, char *argv[]) {
 
     printf("\nThe sum is %d.\n", sum);
     printf("The average is %f.\n", avg);
+    return 0;
 }

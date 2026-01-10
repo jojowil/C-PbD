@@ -3,26 +3,26 @@
 #include <stdlib.h>
 #include <time.h>
 
-int main(int argc, char *argv[]) {
-    int randomNumber, guess;
-    bool found;
+int main(void) {
+    int guess;
 
     srand(time(NULL));
     // random number between 1 and 20
-    randomNumber = rand() % 20 + 1;
+    int random_number = rand() % 20 + 1;
 
     printf("I'm thinking of a number between 1 and 20.\n");
 
-    found = false;
+    bool found = false;
     while (!found) {
         printf("Guess the value between 1 and 20: ");
         scanf("%d", &guess);
 
-        if (guess == randomNumber)
+        if (guess == random_number)
             found = true;
         else
             printf("It's not %d.\n", guess);
     }
 
     printf("\nYou got it!\n");
+    return 0;
 }

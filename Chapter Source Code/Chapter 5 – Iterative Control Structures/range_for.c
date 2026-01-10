@@ -1,9 +1,8 @@
 #include <stdio.h>
 
-int main(int argc, char *argv[]) {
+int main(void) {
     int sum = 0;
     int x, value;
-    double avg;
 
     for (x = 1; x <= 3; x++) {
         printf("Enter value #%d: ", x);
@@ -11,8 +10,9 @@ int main(int argc, char *argv[]) {
         sum = sum + value;
     }
 
-    avg = sum / 3.0;
+    double avg = sum / 3.0;
 
     printf("The sum is %d.\n", sum);
     printf("The average is %f.\n", avg);
+    return 0;
 }
