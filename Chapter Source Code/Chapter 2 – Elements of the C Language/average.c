@@ -9,4 +9,5 @@ int main(int argc, char **argv) {
     const double average = sum / 3.0;
 
     printf("The average is %f.\n", average);
+    return 0;
 }
