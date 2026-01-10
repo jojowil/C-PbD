@@ -2,7 +2,7 @@
 
 int main(void) {
     int month;
-    char monthStr[20], *s;
+    char month_str[20], *s;
 
     printf("Enter the month (1-12): ");
     scanf("%d", &month);
@@ -49,7 +49,7 @@ int main(void) {
             break;
     }
 
-    snprintf(monthStr, sizeof monthStr, "%s", s);
-    printf("The month selected is %s\n", monthStr);
+    snprintf(month_str, sizeof month_str, "%s", s);
+    printf("The month selected is %s\n", month_str);
     return 0;
 }

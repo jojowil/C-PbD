@@ -4,9 +4,9 @@
 int main(void) {
     bool daytime, nighttime;
 
-    bool sunShining = true;
+    bool sun_shining = true;
 
-    if (sunShining == true) {
+    if (sun_shining == true) {
         daytime = true;
         nighttime = false;
     } else {
@@ -14,7 +14,7 @@ int main(void) {
         nighttime = true;
     }
 
-    printf("sunShining = %d\n", sunShining);
+    printf("sunShining = %d\n", sun_shining);
     printf("daytime = %d\n", daytime);
     printf("nighttime = %d\n", nighttime);
     return 0;
