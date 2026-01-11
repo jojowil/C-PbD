@@ -15,8 +15,7 @@ int fib2(int n, int p, int c) {
     fibcalls++;
     if (n == 0)
         return p + c;
-    else
-        return fib2(n - 1, c, p + c);
+    return fib2(n - 1, c, p + c);
 }
 
 int main(void) {

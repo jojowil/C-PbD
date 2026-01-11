@@ -2,8 +2,8 @@
 
 // globals
 long fibcalls;
-#define MEMOSIZE 100
-int memo[MEMOSIZE];
+#define MEMO_SIZE 100
+int memo[MEMO_SIZE];
 
 int fib(int n) {
     fibcalls++;
@@ -21,7 +21,7 @@ int fib(int n) {
 
 int main(void) {
     // allocate array and set start values to -1.
-    for (int x = 0; x < MEMOSIZE; x++)
+    for (int x = 0; x < MEMO_SIZE; x++)
         memo[x] = -1;
 
     fibcalls = 0;
